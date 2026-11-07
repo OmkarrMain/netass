@@ -9,6 +9,7 @@ import CookieBanner from "./components/CookieBanner";
 import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import PlansPage from "./pages/PlansPage";
+import AuthPage from "./pages/AuthPage";
 import StaticPage from "./pages/StaticPage";
 import Placeholder from "./pages/Placeholder";
 
@@ -19,10 +20,7 @@ function AppLayout() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/auth"
-          element={<Placeholder title="Login / Register" />}
-        />
+        <Route path="/auth" element={<AuthPage />} />
         <Route path="/plans" element={<PlansPage />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<StaticPage page="about" />} />
